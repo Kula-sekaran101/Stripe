@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="Stripe" Database="" Version="10000">
-  <Project Name="1087" Path="1087/1087.project" Active="No"/>
+  <Project Name="1087" Path="1087/1087.project" Active="Yes"/>
   <Project Name="1096" Path="1096/1096.project" Active="No"/>
   <Project Name="Shop_Penalty" Path="Shop_Penalty/Shop_Penalty.project" Active="No"/>
   <Project Name="Evaluate_division(399)" Path="Evaluate_division(399)/Evaluate_division(399).project" Active="No"/>
   <Project Name="Cost_to_ship" Path="Cost_to_ship/Cost_to_ship.project" Active="No"/>
-  <Project Name="Quick_Fox" Path="Quick_Fox/Quick_Fox.project" Active="Yes"/>
+  <Project Name="Quick_Fox" Path="Quick_Fox/Quick_Fox.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug">
       <Environment/>

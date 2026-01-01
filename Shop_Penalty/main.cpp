@@ -29,82 +29,69 @@ using namespace std;
 // PART-1
 
 int compute_penalty(const string& log, int closing_time) {
-    int n = log.size();
-    int penalty = 0;
-
- 
-    for(int i = 0; i < closing_time; i++) {
-        if(log[i] == 'N') penalty += 7;
-    }
-
-
-    for(int i = closing_time; i < n; i++) {
-        if(log[i] == 'Y') penalty += 1;
-    }
-
-    return penalty;
+     int n = log.size();
+     int penalty = 0;
+     for (int i = 0 ; i<closing_time ; i++){
+          if(log[i] == 'N') penalty++;
+     }
+     for(int i = closing_time ; i<n ; i++){
+         if(log[i] == 'Y') penalty++;
+     }
+     return penalty;
 }
 
 
 // PART-2
 
 int getClosingWithMinPenalty(const string& log) {
-    int n = log.size();
-    int bestClosing = 0;
-    int minPenalty = INT_MAX;
-
-  
-    for(int closing = 0; closing <= n; closing++) {
-        int p = compute_penalty(log, closing);
-        if(p < minPenalty) {
-            minPenalty = p;
-            bestClosing = closing;
+     int n = log.size();
+     int penalty = 0;
+     int time;
+     int min_penalty = INT_MAX;
+     
+     for(int i = 0; i<n ; i++){
+         penalty = compute_penalty(log , i);
+         if(penalty < min_penalty) {
+             min_penalty = penalty;
+             time = i;
+         }
         }
-    }
-
-    return bestClosing;
+     return time;
 }
 
 
 // PART-3
 
 vector<int> getAllClosing(const string& input) {
-    vector<int> results;
-    stack<string> st;
-    vector<string> currentLog;
-
-    string word;
-    stringstream ss(input);
-
-    while (ss >> word) {
-        if (word == "BEGIN") {
-            st.push("BEGIN");
-            currentLog.clear();
-        } 
-        else if (word == "END") {
-            if (!st.empty()) {
-                st.pop();
-          
-                string log = "";
-                for (string &x : currentLog) log += x;
-
-                int closing = getClosingWithMinPenalty(log);
-                results.push_back(closing);
-            }
-        } 
-        else {
-            if (!st.empty()) {
-             
-                currentLog.push_back(word);
-            }
-        }
+      stack<string> st;
+      vector<int> vec;
+      
+      stringstream ss(input);
+      string word;
+      
+      while(ss>> word){
+          if(word == "BEGIN"){
+              st.push("");
+          }else if(word == "END"){
+              if(!st.empty()){
+              string log = st.top();
+             int result =  getClosingWithMinPenalty(log);
+              vec.push_back(result);
+          }
     }
-
-    return results;
+          else if(word == "Y" || word == "N"){
+              if(!st.empty()){
+                  st.top() += word;
+              }
+          }
+      }
+      
+      return vec;
 }
 
 
 int main() {
+
 
     string logs = "BEGIN BEGIN BEGIN Y Y N Y END Y Y N N END Y N Y N END";
     vector<int> closings = getAllClosing(logs);

@@ -1,4 +1,24 @@
 [{
+		"file":	"C:\\Users\\kulas\\OneDrive\\Documents\\Stripe\\Quick_Fox\\main.cpp",
+		"directory":	"C:\\Users\\kulas\\OneDrive\\Documents\\Stripe\\Quick_Fox",
+		"command":	"C:/mingw64/bin/g++.exe -c C:\\Users\\kulas\\OneDrive\\Documents\\Stripe\\Quick_Fox\\main.cpp -o C:\\Users\\kulas\\OneDrive\\Documents\\Stripe\\Quick_Fox\\main.cpp.o -target x86_64-w64-mingw32 -IC:\\mingw64\\include\\c++\\15.2.0 -IC:\\mingw64\\include\\c++\\15.2.0\\x86_64-w64-mingw32 -IC:\\mingw64\\include\\c++\\15.2.0\\backward -IC:\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\15.2.0\\include -IC:\\mingw64\\include -IC:\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\15.2.0\\include-fixed -IC:\\mingw64\\x86_64-w64-mingw32\\include -IC:\\mingw64\\bin\\mingw\\include -I. -I.  -O0  -gdwarf-2  -std=c++17  -Wall"
+	}, {
+		"file":	"C:\\Users\\kulas\\OneDrive\\Documents\\Stripe\\Shop_Penalty\\main.cpp",
+		"directory":	"C:\\Users\\kulas\\OneDrive\\Documents\\Stripe\\Shop_Penalty",
+		"command":	"C:/mingw64/bin/g++.exe -c C:\\Users\\kulas\\OneDrive\\Documents\\Stripe\\Shop_Penalty\\main.cpp -o C:\\Users\\kulas\\OneDrive\\Documents\\Stripe\\Shop_Penalty\\main.cpp.o -target x86_64-w64-mingw32 -IC:\\mingw64\\include\\c++\\15.2.0 -IC:\\mingw64\\include\\c++\\15.2.0\\x86_64-w64-mingw32 -IC:\\mingw64\\include\\c++\\15.2.0\\backward -IC:\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\15.2.0\\include -IC:\\mingw64\\include -IC:\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\15.2.0\\include-fixed -IC:\\mingw64\\x86_64-w64-mingw32\\include -IC:\\mingw64\\bin\\mingw\\include -I. -I.  -O0  -gdwarf-2  -std=c++17  -Wall"
+	}, {
+		"file":	"C:\\Users\\kulas\\OneDrive\\Documents\\Stripe\\Cost_to_ship\\main.cpp",
+		"directory":	"C:\\Users\\kulas\\OneDrive\\Documents\\Stripe\\Cost_to_ship",
+		"command":	"C:/mingw64/bin/g++.exe -c C:\\Users\\kulas\\OneDrive\\Documents\\Stripe\\Cost_to_ship\\main.cpp -o C:\\Users\\kulas\\OneDrive\\Documents\\Stripe\\Cost_to_ship\\main.cpp.o -target x86_64-w64-mingw32 -IC:\\mingw64\\include\\c++\\15.2.0 -IC:\\mingw64\\include\\c++\\15.2.0\\x86_64-w64-mingw32 -IC:\\mingw64\\include\\c++\\15.2.0\\backward -IC:\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\15.2.0\\include -IC:\\mingw64\\include -IC:\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\15.2.0\\include-fixed -IC:\\mingw64\\x86_64-w64-mingw32\\include -IC:\\mingw64\\bin\\mingw\\include -I. -I.  -O0  -gdwarf-2  -std=c++17  -Wall"
+	}, {
+		"file":	"C:\\Users\\kulas\\OneDrive\\Documents\\Stripe\\Evaluate_division(399)\\main.cpp",
+		"directory":	"C:\\Users\\kulas\\OneDrive\\Documents\\Stripe\\Evaluate_division(399)",
+		"command":	"C:/mingw64/bin/g++.exe -c C:\\Users\\kulas\\OneDrive\\Documents\\Stripe\\Evaluate_division(399)\\main.cpp -o C:\\Users\\kulas\\OneDrive\\Documents\\Stripe\\Evaluate_division(399)\\main.cpp.o -target x86_64-w64-mingw32 -IC:\\mingw64\\include\\c++\\15.2.0 -IC:\\mingw64\\include\\c++\\15.2.0\\x86_64-w64-mingw32 -IC:\\mingw64\\include\\c++\\15.2.0\\backward -IC:\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\15.2.0\\include -IC:\\mingw64\\include -IC:\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\15.2.0\\include-fixed -IC:\\mingw64\\x86_64-w64-mingw32\\include -IC:\\mingw64\\bin\\mingw\\include -I. -I.  -O0  -gdwarf-2  -std=c++17  -Wall"
+	}, {
+		"file":	"C:\\Users\\kulas\\OneDrive\\Documents\\Stripe\\1096\\main.cpp",
+		"directory":	"C:\\Users\\kulas\\OneDrive\\Documents\\Stripe\\1096",
+		"command":	"C:/mingw64/bin/g++.exe -c C:\\Users\\kulas\\OneDrive\\Documents\\Stripe\\1096\\main.cpp -o C:\\Users\\kulas\\OneDrive\\Documents\\Stripe\\1096\\main.cpp.o -target x86_64-w64-mingw32 -IC:\\mingw64\\include\\c++\\15.2.0 -IC:\\mingw64\\include\\c++\\15.2.0\\x86_64-w64-mingw32 -IC:\\mingw64\\include\\c++\\15.2.0\\backward -IC:\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\15.2.0\\include -IC:\\mingw64\\include -IC:\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\15.2.0\\include-fixed -IC:\\mingw64\\x86_64-w64-mingw32\\include -IC:\\mingw64\\bin\\mingw\\include -I. -I.  -O0  -gdwarf-2  -std=c++17  -Wall"
+	}, {
 		"file":	"C:\\Users\\kulas\\OneDrive\\Documents\\Stripe\\1087\\main.cpp",
 		"directory":	"C:\\Users\\kulas\\OneDrive\\Documents\\Stripe\\1087",
 		"command":	"C:/mingw64/bin/g++.exe -c C:\\Users\\kulas\\OneDrive\\Documents\\Stripe\\1087\\main.cpp -o C:\\Users\\kulas\\OneDrive\\Documents\\Stripe\\1087\\main.cpp.o -target x86_64-w64-mingw32 -IC:\\mingw64\\include\\c++\\15.2.0 -IC:\\mingw64\\include\\c++\\15.2.0\\x86_64-w64-mingw32 -IC:\\mingw64\\include\\c++\\15.2.0\\backward -IC:\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\15.2.0\\include -IC:\\mingw64\\include -IC:\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\15.2.0\\include-fixed -IC:\\mingw64\\x86_64-w64-mingw32\\include -IC:\\mingw64\\bin\\mingw\\include -I. -I.  -O0  -gdwarf-2  -std=c++17  -Wall"

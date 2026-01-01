@@ -28,56 +28,49 @@ Output = "read.txt"
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <sstream>
 using namespace std;
 
 class Solution {
 public:
-    vector<string> braceExpansion(string s) {
-        vector<vector<char>> groups;
-        int n = s.size();
-
-        for (int i = 0; i < n; i++) {
-            if (s[i] == '{') {
-                vector<char> choices;
-                i++;
-                while (i < n && s[i] != '}') {
-                    if (s[i] != ',')
-                        choices.push_back(s[i]);
-                    i++;
-                }
-                sort(choices.begin(), choices.end());
-                groups.push_back(choices);
-            }
-            else {
-                groups.push_back({ s[i] });
-            }
-        }
-
-        vector<string> result;
-        string current;
-        dfs(groups, 0, current, result);
-        return result;
-    }
-
-private:
-    void dfs(vector<vector<char>>& groups, int index, string& current, vector<string>& result) {
-        if (index == groups.size()) {
-            result.push_back(current);
-            return;
-        }
-
-        for (char c : groups[index]) {
-            current.push_back(c);
-            dfs(groups, index + 1, current, result);
-            current.pop_back();
-        }
+    vector<string> expandExpression(string s) {
+         int l = -1;
+         int r = -1;
+         int n =  s.size();
+         vector<string> words;
+         vector<string> result;
+         for(int i = 0  ; i<n ; i++){
+             if(s[i] == '{') l = i;
+             if(s[i] == '}') r = i;
+         }
+         string prefix = s.substr(0 , l);
+         string middle = s.substr(l+1, r-l-1);
+         string suffix = s.substr(r+1 );
+         
+         stringstream ss(middle);
+         string temp;
+         while(getline(ss, temp , ',')){
+             words.push_back(temp);
+         }
+         
+         if(words.size() <=1) return { s };
+         if(l == -1 || r == -1) return {s };
+         if(r < l) return {s};
+         
+         int m = words.size();
+         for(int i = 0; i<m; i++){
+             result.push_back(prefix + words[i] + suffix);
+         }
+         return result;
     }
 };
 
 int main() {
     Solution sol;
-    auto result = sol.braceExpansion("{a,b}c{d,e}");
 
-    for (auto &x : result) cout << x << " ";
+   auto result = sol.expandExpression("hello-}-weird-{-world");
+   for(auto x: result){
+       cout<<x<<endl;
+   }
     return 0;
 }
