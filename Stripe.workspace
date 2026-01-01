@@ -1,29 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="Stripe" Database="" Version="10000">
-  <Project Name="1087" Path="1087/1087.project" Active="Yes"/>
+  <Project Name="expandExpression" Path="1087/1087.project" Active="No"/>
   <Project Name="1096" Path="1096/1096.project" Active="No"/>
   <Project Name="Shop_Penalty" Path="Shop_Penalty/Shop_Penalty.project" Active="No"/>
-  <Project Name="Evaluate_division(399)" Path="Evaluate_division(399)/Evaluate_division(399).project" Active="No"/>
+  <Project Name="Evaluate_division(399)" Path="Evaluate_division(399)/Evaluate_division(399).project" Active="Yes"/>
   <Project Name="Cost_to_ship" Path="Cost_to_ship/Cost_to_ship.project" Active="No"/>
   <Project Name="Quick_Fox" Path="Quick_Fox/Quick_Fox.project" Active="No"/>
+  <Project Name="BraceExpansion" Path="BraceExpansion/BraceExpansion.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug">
       <Environment/>
-      <Project Name="1087" ConfigName="Debug"/>
+      <Project Name="expandExpression" ConfigName="Debug"/>
       <Project Name="1096" ConfigName="Debug"/>
       <Project Name="Shop_Penalty" ConfigName="Debug"/>
       <Project Name="Evaluate_division(399)" ConfigName="Debug"/>
       <Project Name="Cost_to_ship" ConfigName="Debug"/>
       <Project Name="Quick_Fox" ConfigName="Debug"/>
+      <Project Name="BraceExpansion" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release">
       <Environment/>
-      <Project Name="1087" ConfigName="Release"/>
+      <Project Name="expandExpression" ConfigName="Release"/>
       <Project Name="1096" ConfigName="Release"/>
       <Project Name="Shop_Penalty" ConfigName="Release"/>
       <Project Name="Evaluate_division(399)" ConfigName="Release"/>
       <Project Name="Cost_to_ship" ConfigName="Release"/>
       <Project Name="Quick_Fox" ConfigName="Release"/>
+      <Project Name="BraceExpansion" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

@@ -28,47 +28,62 @@ Example 3:
 Input: equations = [["a","b"]], values = [0.5], queries = [["a","b"],["b","a"],["a","c"],["x","y"]]
 Output: [0.50000,2.00000,-1.00000,-1.00000]*/
 
-
-#include <bits/stdc++.h>
-using namespace std;
-
 class Solution {
+  unordered_map<string , vector<pair<string , double>>> graph;
 public:
-    double dfs(string curr, string target, unordered_map<string, unordered_map<string, double>>& graph, unordered_set<string>& visited) {
-        if (graph.find(curr) == graph.end() || graph.find(target) == graph.end()) return -1.0;
-        if (curr == target) return 1.0;
-        
-        visited.insert(curr);
-        
-        for (auto& neighbor : graph[curr]) {
-            string next = neighbor.first;
-            double weight = neighbor.second;
-            if (!visited.count(next)) {
-                double result = dfs(next, target, graph, visited);
-                if (result != -1.0) return weight * result;
-            }
-        }
+  void buildGraph(vector<vector<string>>& equation , vector<double>& values){
+       int n = equation.size();
+       for(int i = 0; i<n ; i++){
+          string A = equation[i][0];
+          string B = equation[i][1];
+          double value = values[i];
+
+          graph[A].push_back({B , value});
+          graph[B].push_back({A , 1.0/value});
+       }
+  }
+
+double dfs(string start , string end){
+    if(!graph.count(start) || !graph.count(end)){
         return -1.0;
     }
-    
+    if(start == end){
+        return 1.0;
+    }
+
+   queue<pair<string , double>> q;
+   unordered_set<string> visited;
+   q.push({start , 1.0});
+   visited.insert(start);
+
+   while(!q.empty()){
+    auto [node , value] = q.front();
+    q.pop();
+
+    if(node == end) return value;
+
+    for(auto next: graph[node]){
+        string n =  next.first;
+        double weight = next.second;
+        if(!visited.count(n)){
+            visited.insert(n);
+            q.push({n , value*weight});
+        }
+    }
+   }
+
+   return -1.0;
+}
+
+  
+public:
     vector<double> calcEquation(vector<vector<string>>& equations, vector<double>& values, vector<vector<string>>& queries) {
-        unordered_map<string, unordered_map<string, double>> graph;
-        
-     
-        for (int i = 0; i < equations.size(); i++) {
-            string u = equations[i][0], v = equations[i][1];
-            double val = values[i];
-            graph[u][v] = val;
-            graph[v][u] = 1.0 / val;
+        buildGraph(equations , values);
+        vector<double> result;
+
+        for(auto q: queries){
+            result.push_back(dfs(q[0],q[1]));
         }
-        
-        
-        vector<double> results;
-        for (auto& q : queries) {
-            string start = q[0], end = q[1];
-            unordered_set<string> visited;
-            results.push_back(dfs(start, end, graph, visited));
-        }
-        return results;
+        return result;
     }
 };
