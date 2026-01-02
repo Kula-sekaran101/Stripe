@@ -7,6 +7,7 @@
   <Project Name="Cost_to_ship" Path="Cost_to_ship/Cost_to_ship.project" Active="No"/>
   <Project Name="Quick_Fox" Path="Quick_Fox/Quick_Fox.project" Active="No"/>
   <Project Name="BraceExpansion" Path="BraceExpansion/BraceExpansion.project" Active="No"/>
+  <Project Name="2050" Path="2050/2050.project"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug">
       <Environment/>
@@ -17,6 +18,7 @@
       <Project Name="Cost_to_ship" ConfigName="Debug"/>
       <Project Name="Quick_Fox" ConfigName="Debug"/>
       <Project Name="BraceExpansion" ConfigName="Debug"/>
+      <Project Name="2050" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release">
       <Environment/>
@@ -27,6 +29,7 @@
       <Project Name="Cost_to_ship" ConfigName="Release"/>
       <Project Name="Quick_Fox" ConfigName="Release"/>
       <Project Name="BraceExpansion" ConfigName="Release"/>
+      <Project Name="2050" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

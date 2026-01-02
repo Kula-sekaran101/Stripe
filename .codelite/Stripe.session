@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Session Name="C:\Users\kulas\OneDrive\Documents\Stripe\Stripe.workspace">
-  <int Value="1" Name="m_selectedTab"/>
+  <int Value="0" Name="m_selectedTab"/>
   <wxString Value="C:\Users\kulas\OneDrive\Documents\Stripe\Stripe.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="C:\Users\kulas\OneDrive\Documents\Stripe\BraceExpansion\main.cpp" Name="FileName"/>
-      <int Value="35" Name="FirstVisibleLine"/>
-      <int Value="67" Name="CurrentLine"/>
+      <wxString Value="C:\Users\kulas\OneDrive\Documents\Stripe\1087\main.cpp" Name="FileName"/>
+      <int Value="28" Name="FirstVisibleLine"/>
+      <int Value="27" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\Users\kulas\OneDrive\Documents\Stripe\1096\main.cpp" Name="FileName"/>
+      <wxString Value="C:\Users\kulas\OneDrive\Documents\Stripe\Evaluate_division(399)\main.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="34" Name="CurrentLine"/>
+      <int Value="59" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\kulas\OneDrive\Documents\Stripe\Shop_Penalty\main.cpp" Name="FileName"/>
+      <int Value="63" Name="FirstVisibleLine"/>
+      <int Value="24" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
